@@ -30,4 +30,4 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Ejecutar todos los test del paquete es.codeurjc.ais
-        run: mvn tests test
+        run: mvn test
