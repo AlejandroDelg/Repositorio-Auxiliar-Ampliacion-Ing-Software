@@ -33,6 +33,6 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
       - name: Ejecutar todos los test del paquete es.codeurjc.ais
-        run: mvn -B '-Dtest=es.codeurjc.ais.*Test' test
+        run: mvn tests test
       - name: subir la imagen docker a DockerHub
         run: docker push myapp:dev-$(date +"%Y-%m-%d")
