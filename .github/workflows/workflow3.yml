@@ -28,7 +28,7 @@ jobs:
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
         
     - name: Generate Docker image
-      run: mvn spring-boot:build-image -DskipTests -Dspring-boot.build-image.imageName=${{ secrets.DOCKERHUB_USERNAME }}/items:v1
+      run: mvn spring-boot:build-image -DskipTests -Dspring-boot.build-image.imageName=${{ secrets.DOCKERHUB_USERNAME }}/dev-fecha:$(date +"%Y-%m-%d")
 
     #- name: Build Docker image
       #run: docker build -t myapp:dev-$(date +"%Y-%m-%d") .
