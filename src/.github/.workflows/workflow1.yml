@@ -1,0 +1,22 @@
+#Workflow 1: Cada vez que se termine una feature (ramas feature/*), y antes de integrarse en la rama correspondiente (rama develop), Se ejecutarán las pruebas unitarias y de integración.
+name: workflow1
+
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - feature/*
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      -name: descargar el repo
+      - uses: actions/checkout@v3
+      - name: Configurar Java
+        uses: actions/setup-java@v3
+      - name: Ejecutar test integracion
+        run: mvn -B '-Dtest=es.codeurjc.ais.integration.*Test' test
+      - name: Ejecutar test unitarios
+        run: mvn -B '-Dtest=es.codeurjc.ais.unitary.*Test' test
