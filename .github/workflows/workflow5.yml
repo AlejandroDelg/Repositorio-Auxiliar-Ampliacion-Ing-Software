@@ -22,8 +22,11 @@ jobs:
       
       - name: Login to DockerHub
         run: docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" -p "${{ secrets.DOCKERHUB_PASSWORD }}" 
+      - name: Get Maven version
+        id: get_version
+        run: echo "::set-output name=version::$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)"
       - name: Push image to DockerHub
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/books-reviewer:$(mvn help:evaluate -Dexpression=project.version)
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/books-reviewer:${{steps.get_version.outputs.version }}
       - name: Install Okteto CLI
         run: curl https://get.okteto.com -sSfL | sh
       - name: Login into Okteto
