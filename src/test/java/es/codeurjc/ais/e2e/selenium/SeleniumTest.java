@@ -25,7 +25,7 @@ public class SeleniumTest {
     int port;
 
     WebDriver driver;
-    
+
     @BeforeAll
 	public static void setupClass() {
 		WebDriverManager.chromedriver().setup();
@@ -35,11 +35,6 @@ public class SeleniumTest {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
 		driver = new ChromeDriver(options);
-	}
-
-	@BeforeEach
-	public void setupTest() {
-        this.driver = new ChromeDriver();
 	}
 
 	@AfterEach
