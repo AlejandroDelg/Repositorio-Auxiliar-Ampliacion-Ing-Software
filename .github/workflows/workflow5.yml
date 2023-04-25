@@ -25,7 +25,7 @@ jobs:
       - name: Push image to DockerHub
         env:
           VERSION: ${{ project.version }}
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/books-reviewer:${{project.version}}
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/books-reviewer:-Dexpression=project.version
       - name: Install Okteto CLI
         run: curl https://get.okteto.com -sSfL | sh
       - name: Login into Okteto
