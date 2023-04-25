@@ -18,33 +18,32 @@ import org.springframework.boot.test.web.server.LocalServerPort;
 import es.codeurjc.ais.Application;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-@SpringBootTest(classes = Application.class,webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class SeleniumTest {
 
-    @LocalServerPort
-    int port;
+	@LocalServerPort
+	int port;
 
-    WebDriver driver;
-
-    @BeforeAll
+	WebDriver driver;
+	
+	@BeforeAll
 	public static void setupClass() {
 		WebDriverManager.chromedriver().setup();
 	}
+	
 	@BeforeEach
 	public void setup() {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("headless");
-        options.addArguments("no-sandbox");
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
 		driver = new ChromeDriver(options);
 	}
-
+	
 	@AfterEach
 	public void teardown() {
-		if (this.driver != null) {
-            this.driver.quit();
+		if(driver != null) {
+			driver.quit();
 		}
-    }
-    
+	}
     
     @Test
     @DisplayName("Check that the default topic is fantasy")
