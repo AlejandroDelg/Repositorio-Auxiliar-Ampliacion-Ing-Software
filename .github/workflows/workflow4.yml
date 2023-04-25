@@ -1,0 +1,25 @@
+name: workflow4
+on:
+  push:
+    branches:
+      -'release/**'
+      
+  workflow_dispatch:
+  
+jobs:
+
+  workflow:
+    # Steps represent a sequence of tasks that will be executed as part of the job
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v3
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: 17
+          distribution: 'temurin'
+      - name: Ejecutar test integracion
+        run: mvn -B '-Dtest=es.codeurjc.ais.integration.*Test' test
+      - name: Ejecutar test unitarios
+        run: mvn -B '-Dtest=es.codeurjc.ais.unitary.*Test' test
+
