@@ -41,7 +41,7 @@ public class SeleniumTest {
 		}
     }
     
-    /* 
+    
     @Test
     @DisplayName("Check that the default topic is fantasy")
 	public void checkDefaultTopic() throws Exception {
@@ -55,7 +55,7 @@ public class SeleniumTest {
         assertEquals("Books (topic="+topic+")", title);
     }
 
-    
+    /* 
     @Test
     public void drama() throws InterruptedException 
     {
