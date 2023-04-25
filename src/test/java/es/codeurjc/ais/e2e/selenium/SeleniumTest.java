@@ -11,22 +11,30 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
 
+import es.codeurjc.ais.Application;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes = Application.class,webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class SeleniumTest {
 
     @LocalServerPort
     int port;
 
-    private WebDriver driver;
-
-	@BeforeAll
+    WebDriver driver;
+    
+    @BeforeAll
 	public static void setupClass() {
 		WebDriverManager.chromedriver().setup();
+	}
+	@BeforeEach
+	public void setup() {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+		driver = new ChromeDriver(options);
 	}
 
 	@BeforeEach
