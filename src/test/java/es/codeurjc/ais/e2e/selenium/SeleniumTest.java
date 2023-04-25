@@ -35,9 +35,9 @@ public class SeleniumTest {
 	@BeforeEach
 	public void setup() {
 		ChromeOptions options = new ChromeOptions();
-		//options.addArguments("--headless");
+		options.addArguments("--headless");
 		driver = new ChromeDriver(options);
-        options.addArguments("no-sandbox");
+        //options.addArguments("no-sandbox");
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 	

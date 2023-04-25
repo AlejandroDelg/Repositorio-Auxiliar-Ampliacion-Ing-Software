@@ -17,6 +17,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>17</java.version>
 		<selenium.version>4.8.3</selenium.version>
+		<webdrivermanager.version>5.1.0</webdrivermanager.version>
 	</properties>
 
 	<dependencies>
@@ -58,7 +59,7 @@
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
-			<version>5.1.0</version>
+			<version>${webdrivermanager.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
