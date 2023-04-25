@@ -22,7 +22,7 @@ jobs:
       - name: Run tests
         run: mvn -B '-Dtest=es.codeurjc.ais.integration.*Test' test
       - name: Generate Docker image
-        run: mvn spring-boot:build-image -DskipTests -Dspring-boot.build-image.imageName=ts -Dspring-boot.build-image.image/books-reviewer:${{steps.get_version.outputs.version }}
+        run: mvn spring-boot:build-image -DskipTests -Dspring-boot.build-image.imageName=${{ secrets.DOCKERHUB_USERNAME }}/books-reviewer:${{steps.get_version.outputs.version }}
       - name: Login to DockerHub
         run: docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" -p "${{ secrets.DOCKERHUB_PASSWORD }}" 
       - name: Push image to DockerHub
