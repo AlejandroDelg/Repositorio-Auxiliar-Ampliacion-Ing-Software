@@ -1,5 +1,5 @@
 services:
   books-reviewer:
-    image: a.delgadog.2019/books-reviewer:<project.version>
+    image: books-reviewer
     ports:
       - 8080:8080
