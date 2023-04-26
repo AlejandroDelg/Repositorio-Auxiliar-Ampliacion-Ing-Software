@@ -25,7 +25,7 @@ jobs:
         run: mvn spring-boot:build-image -DskipTests -Dspring-boot.build-image.imageName=${{ secrets.DOCKERHUB_USERNAME }}/books-reviewer:${{steps.get_version.outputs.version }}
       - name: Login to DockerHub
         run: docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" -p "${{ secrets.DOCKERHUB_PASSWORD }}" 
-         - name: Install Okteto CLI
+      - name: Install Okteto CLI
         run: curl https://get.okteto.com -sSfL | sh
       - name: Login into Okteto
         run: okteto context use https://cloud.okteto.com --token ${{ secrets.OKTETO_PASSWORD }}
