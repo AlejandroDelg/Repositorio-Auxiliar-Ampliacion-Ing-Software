@@ -20,7 +20,7 @@ jobs:
         run: echo "::set-output name=version::$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)"
       
       - name: Run tests
-        run: mvn -B '-Dtest=es.codeurjc.ais.integration.*Test' test
+        run: mvn test
       - name: Generate Docker image
         run: mvn spring-boot:build-image -DskipTests 
       - name: Login to DockerHub

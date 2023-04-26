@@ -1,6 +1,8 @@
 package es.codeurjc.ais.e2e.selenium;
 
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import java.time.Duration;
 
 import org.junit.jupiter.api.AfterEach;
@@ -8,6 +10,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -56,9 +59,9 @@ public class SeleniumTest {
 
         this.driver.get("http://localhost:"+this.port+"/");
 
-//        String title = driver.findElement(By.tagName("h1")).getText();
+        String title = driver.findElement(By.tagName("h1")).getText();
         
-  //      assertEquals("Books (topic="+topic+")", title);
+        assertEquals("Books (topic="+topic+")", title);
     }
 
     /* 
