@@ -1,6 +1,8 @@
 services:
   books-reviewer:
     image: ${DOCKER_USER}/myservice:${VERSION}
+    ports:
+      - 8080:8080
     build:
       args:
         - VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
