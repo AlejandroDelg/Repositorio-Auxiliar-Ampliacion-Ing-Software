@@ -2,7 +2,6 @@ services:
   books-reviewer:
     image: ${DOCKER_USER}/myservice:${VERSION}
     build:
-      context: .
       args:
         - VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
     environment:
