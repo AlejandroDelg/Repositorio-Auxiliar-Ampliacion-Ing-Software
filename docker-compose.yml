@@ -1,5 +1,9 @@
 services:
   books-reviewer:
-    image: alejandrodelg/books-reviewer:0.2.0-SNAPSHOT
-    ports:
-    - 8080:8080
+    image: ${DOCKER_USER}/myservice:${VERSION}
+    build:
+      context: .
+      args:
+        - VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
+    environment:
+      - DOCKER_USER=$(mvn help:evaluate -Dexpression=docker.username -q -DforceStdout)
