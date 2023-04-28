@@ -1,6 +1,6 @@
 services:
   books-reviewer:
-    image: ${DOCKER_USER}/myservice:${VERSION}
+    image: ${DOCKER_USER}/books-reviewer:${VERSION}
     ports:
       - 8080:8080
     build:
