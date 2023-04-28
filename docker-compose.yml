@@ -1,5 +1,5 @@
 services:
   books-reviewer:
-    image: alejandrodelg/books-reviewer:0.2.0-SNAPSHOT
+    image: alejandrodelg/books-reviewer:${project.version}
     ports:
       - 8080:8080
