@@ -35,7 +35,7 @@ jobs:
       - name: Push image to DockerHub
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/books-reviewer:${{steps.get_version.outputs.version }}
       - name: Deploy to Okteto
-        run: okteto deploy --wait --image ${{ secrets.DOCKERHUB_USERNAME }}/books-reviewer:${{project.version}} books-reviewer-okteto:${{project.version}}         
+        run: okteto deploy --wait --image ${{ secrets.DOCKERHUB_USERNAME }}/books-reviewer:${{steps.get_version.outputs.version }}
       - name: Run smoke test
         run: mvn -Dhost=https://books-reviewer-alejandrodelg.cloud.okteto.net/ -Dtest=SeleniumTest#smokeTest test
 
