@@ -1,5 +1,5 @@
 services:
   books-reviewer:
-    image: alejandrodelg/books-reviewer:${project.version}
+    image: <dockerhub.user>/books-reviewer:0.2.0-SNAPSHOT
     ports:
       - 8080:8080
