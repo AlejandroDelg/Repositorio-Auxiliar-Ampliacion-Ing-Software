@@ -6,5 +6,4 @@ services:
     build:
       args:
         - VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
-    environment:
-      - DOCKER_USER=$(mvn help:evaluate -Dexpression=docker.username -q -DforceStdout)
+        - DOCKER_USER=$(mvn help:evaluate -Dexpression=docker.username -q -DforceStdout)
