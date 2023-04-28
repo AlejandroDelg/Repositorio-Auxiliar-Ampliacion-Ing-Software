@@ -37,5 +37,5 @@ jobs:
       - name: Deploy to Okteto
         run: okteto deploy --wait          
       - name: Run smoke test
-        run: mvn -Dhost=https://cloud.okteto.com/spaces/alejandrodelg -Dtest=SeleniumTest#smokeTest test
+        run: mvn -Dhost=https://books-reviewer-alejandrodelg.cloud.okteto.net/ -Dtest=SeleniumTest#smokeTest test
 
