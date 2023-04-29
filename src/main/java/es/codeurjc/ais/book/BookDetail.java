@@ -19,7 +19,13 @@ public class BookDetail extends Book{
         return description;
     }
 
-    public void setDescription(String description) {
+    public void setDescription(String description) 
+    {
+        if(description.length() > 950)
+        {
+            description = description.substring(0, 950);
+            description += "...";
+        }
         this.description = description;
     }
 
