@@ -1,9 +1,7 @@
 name: workflow4
 on:
   push:
-    branches:
-      -'release/**'
-      
+    branches: [release/**] 
   workflow_dispatch:
   
 jobs:
