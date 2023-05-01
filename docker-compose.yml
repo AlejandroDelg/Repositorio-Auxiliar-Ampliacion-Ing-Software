@@ -1,5 +1,5 @@
 services:
   books-reviewer:
-    image: alejandrodelg/books-reviewer:0.3.0  
+    image: alejandrodelg/books-reviewer:0.3.0   
     ports:
       - 8080:8080
