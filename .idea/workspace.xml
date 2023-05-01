@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="54ff11c3-821f-4730-9f46-a3ced41b512e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/codeurjc/ais/e2e/rest/RestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/codeurjc/ais/e2e/rest/RestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/codeurjc/ais/e2e/selenium/SeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/codeurjc/ais/e2e/selenium/SeleniumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/es/codeurjc/ais/integration/OpenLibraryServiceIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/es/codeurjc/ais/integration/OpenLibraryServiceIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/es/codeurjc/ais/book/BookDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/es/codeurjc/ais/book/BookDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/book.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/books.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/es/codeurjc/ais/e2e/rest/RestTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/es/codeurjc/ais/e2e/rest/RestTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/es/codeurjc/ais/e2e/selenium/SeleniumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/es/codeurjc/ais/e2e/selenium/SeleniumTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/es/codeurjc/ais/integration/OpenLibraryServiceIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/es/codeurjc/ais/integration/OpenLibraryServiceIntegrationTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2PCSur2JO7p0SFdifDEldnJnhLv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Universidad/4 curso/AIS/AIS repos/PruebaRepositorio",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.SeleniumTest.checkDefaultTopic">
+    <configuration name="OpenLibraryServiceIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="a.delgadog.2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.codeurjc.ais.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.codeurjc.ais.integration" />
+      <option name="MAIN_CLASS_NAME" value="es.codeurjc.ais.integration.OpenLibraryServiceIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="a.delgadog.2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.codeurjc.ais.e2e.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.codeurjc.ais.e2e.rest" />
+      <option name="MAIN_CLASS_NAME" value="es.codeurjc.ais.e2e.rest.RestTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumTest.checkDefaultTopic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="a.delgadog.2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.codeurjc.ais.e2e.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.codeurjc.ais.e2e.selenium" />
+      <option name="MAIN_CLASS_NAME" value="es.codeurjc.ais.e2e.selenium.SeleniumTest" />
+      <option name="METHOD_NAME" value="checkDefaultTopic" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumTest.crearReview" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="a.delgadog.2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.codeurjc.ais.e2e.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.codeurjc.ais.e2e.selenium" />
+      <option name="MAIN_CLASS_NAME" value="es.codeurjc.ais.e2e.selenium.SeleniumTest" />
+      <option name="METHOD_NAME" value="crearReview" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeleniumTest.drama" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="a.delgadog.2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.codeurjc.ais.e2e.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.codeurjc.ais.e2e.selenium" />
+      <option name="MAIN_CLASS_NAME" value="es.codeurjc.ais.e2e.selenium.SeleniumTest" />
+      <option name="METHOD_NAME" value="drama" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="PruebaRepositorio" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="PruebaRepositorio" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SeleniumTest.checkDefaultTopic" />
+        <item itemvalue="JUnit.SeleniumTest.crearReview" />
+        <item itemvalue="JUnit.OpenLibraryServiceIntegrationTest" />
+        <item itemvalue="JUnit.RestTest" />
+        <item itemvalue="JUnit.SeleniumTest.drama" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="54ff11c3-821f-4730-9f46-a3ced41b512e" name="Changes" comment="" />
+      <created>1682959796546</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682959796546</updated>
+      <workItem from="1682959797822" duration="1276000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
