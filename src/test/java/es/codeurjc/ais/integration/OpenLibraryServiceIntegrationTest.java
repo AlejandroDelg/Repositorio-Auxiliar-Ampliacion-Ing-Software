@@ -43,6 +43,7 @@ public class OpenLibraryServiceIntegrationTest {
     public void theNameOfTheWind()
     {
         BookData book = openLibraryService.getBook("OL8479867W");
+        System.out.println(book.description);
         assertNotEquals(book , null);
         assertDoesNotThrow(()->{
         	System.out.println("Se ha lanzado una excepcion");

@@ -2,6 +2,7 @@ package es.codeurjc.ais.e2e.selenium;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import java.time.Duration;
 
@@ -38,7 +39,7 @@ public class SeleniumTest {
 	@BeforeEach
 	public void setup() {
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless");
+		//options.addArguments("--headless");
 		driver = new ChromeDriver(options);
         //options.addArguments("no-sandbox");
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -64,7 +65,7 @@ public class SeleniumTest {
         assertEquals("Books (topic="+topic+")", title);
     }
 
-    /* 
+    /*
     @Test
     public void drama() throws InterruptedException 
     {
@@ -81,7 +82,8 @@ public class SeleniumTest {
         String topic = driver.findElement(By.id("drama")).getText();
         assertEquals(mensaje,topic);
         
-    } @Test
+    }
+     */@Test
     public void crearReview() throws InterruptedException 
     {
 		driver.get("http://localhost:"+this.port+"/");
@@ -106,7 +108,6 @@ public class SeleniumTest {
         assertEquals(titulo_review,tituloRecibido);
         
     }
-    
     @Test
     public void borrarReview()throws InterruptedException
     {
@@ -127,5 +128,4 @@ public class SeleniumTest {
         assertNotEquals(tituloRecibido, null);
     	
     }
-    */
 }
