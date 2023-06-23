@@ -1,4 +1,4 @@
-# PruebaRepositorio
-Ejemplo para AIS
+# Ampliacion Ing Software
+Repositorio para la Asignatura de ampliacion de ingenieria del software
 
-## esto es un ejemplo de repoo
+Manejo de workflows con github actions, creacion de ramas segun el modelo de git Flow
