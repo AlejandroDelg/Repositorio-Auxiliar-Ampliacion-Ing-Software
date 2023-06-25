@@ -54,6 +54,6 @@ jobs:
         
       - name: Deploy to Okteto
         run: |
-          export VERSION=${{ github.sha }} okteto deploy
+          export VERSION=${{ github.sha }} okteto deploy --wait
 
       
