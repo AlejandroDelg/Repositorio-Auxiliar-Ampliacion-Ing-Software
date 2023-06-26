@@ -28,7 +28,7 @@ jobs:
         run: mvn -B '-Dtest=es.codeurjc.ais.unitary.*Test' test
         
       - name: Run e2e Rest test
-        run: mvn -B '-Dtest=es.codeurjc.ais.e2e.rest.RestTest#getAllBooks test
+        run: mvn -B '-Dtest=es.codeurjc.ais.e2e.rest.RestTest#getAllBooks' test
         
       - name: Run e2e Selenium test
         run:  mvn -B '-Dtest=es.codeurjc.ais.e2e.selenium.*Test' test
