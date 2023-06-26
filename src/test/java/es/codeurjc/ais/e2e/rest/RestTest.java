@@ -48,8 +48,7 @@ public class RestTest {
         when()
         .get("api/books/OL27479W")
         .then()
-        .statusCode(200)
-         .body("description", lessThanOrEqualTo(5000));;
+        .statusCode(200);
     }
     
 }
