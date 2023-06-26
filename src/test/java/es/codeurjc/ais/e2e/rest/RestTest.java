@@ -7,6 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
+import static org.hamcrest.Matchers.lessThanOrEqualTo;
 
 import io.restassured.RestAssured;
 
@@ -32,6 +33,18 @@ public class RestTest {
                 .statusCode(200)
                 .contentType("application/json");
     
+    }
+
+    @Test
+    public void sanityTest() throws Exception
+    {
+        String host = System.getProperty("host");
+        RestAssured.baseURI = host;
+        when()
+        .get("/api/books/OL27479W")
+        .then()
+        .statusCode(200)
+         .body("description", lessThanOrEqualTo(5000));;
     }
     
 }
