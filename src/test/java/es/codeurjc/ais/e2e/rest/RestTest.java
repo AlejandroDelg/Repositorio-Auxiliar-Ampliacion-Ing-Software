@@ -46,7 +46,7 @@ public class RestTest {
         RestAssured.baseURI = host;
         Thread.sleep(10000);
         when()
-        .get("api/books/OL27479W")
+        .get("/api/books/?topic=drama")
         .then()
         .statusCode(200);
     }
