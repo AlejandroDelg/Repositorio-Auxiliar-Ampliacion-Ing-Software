@@ -27,7 +27,7 @@ jobs:
         run: mvn -B '-Dtest=es.codeurjc.ais.unitary.*Test' test
         
       - name: Run e2e Rest test
-        run: mvn -B '-Dtest=es.codeurjc.ais.e2e.rest.*Test' test
+        run: mvn -B '-Dtest=es.codeurjc.ais.e2e.rest.getAllBooks' test
         
       - name: Run e2e Selenium test
         run:  mvn -B '-Dtest=es.codeurjc.ais.e2e.selenium.*Test' test
@@ -56,5 +56,9 @@ jobs:
         run: |
           export VERSION=${{ github.sha }}
           okteto deploy --wait
+
+      - name: Run e2e Rest sanity test
+        run: mvn Dhost=https://books-reviewer-alejandrodelg.cloud.okteto.net/ -B '-Dtest=es.codeurjc.ais.e2e.rest.sanityTest' test
+
 
       
