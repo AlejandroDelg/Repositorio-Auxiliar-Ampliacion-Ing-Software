@@ -58,7 +58,7 @@ jobs:
           okteto deploy --wait
 
       - name: Run e2e Rest sanity test
-        run: mvn Dhost=https://books-reviewer-alejandrodelg.cloud.okteto.net/ -Dtest=es.codeurjc.ais.e2e.rest.RestTest#sanityTest test
+        run: mvn -Dhost=https://books-reviewer-alejandrodelg.cloud.okteto.net/ -Dtest=es.codeurjc.ais.e2e.rest.RestTest#sanityTest test
 
 
       
