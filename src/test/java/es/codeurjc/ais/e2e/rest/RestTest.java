@@ -24,6 +24,7 @@ public class RestTest {
     }
 
     @Test
+    @DisplayName("get All Books")
 	public void getAllBooks() throws Exception {
 
         when()
@@ -36,6 +37,7 @@ public class RestTest {
     }
 
     @Test
+    @DisplayName("sanity test")
     public void sanityTest() throws Exception
     {
         String host = System.getProperty("host");
