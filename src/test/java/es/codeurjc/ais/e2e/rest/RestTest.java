@@ -40,6 +40,8 @@ public class RestTest {
     @DisplayName("sanity test")
     public void sanityTest() throws Exception
     {
+        //espera de 30 segundos para que carge bien la aplicacion
+        Thread.sleep(30000);
         String host = System.getProperty("host");
         RestAssured.baseURI = host;
         when()
