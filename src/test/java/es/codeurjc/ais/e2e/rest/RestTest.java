@@ -41,9 +41,10 @@ public class RestTest {
     public void sanityTest() throws Exception
     {
         //espera de 30 segundos para que carge bien la aplicacion
-        Thread.sleep(30000);
+        Thread.sleep(10000);
         String host = System.getProperty("host");
         RestAssured.baseURI = host;
+        Thread.sleep(10000);
         when()
         .get("/api/books/OL27479W")
         .then()
