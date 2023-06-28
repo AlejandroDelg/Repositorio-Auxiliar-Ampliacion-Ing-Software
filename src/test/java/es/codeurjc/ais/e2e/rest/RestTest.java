@@ -38,7 +38,7 @@ public class RestTest {
     public void sanityTest() throws Exception
     {
         String host = System.getProperty("host");
-        Thread.sleep(1000);
+        Thread.sleep(10000);
         // Realiza la solicitud REST utilizando Rest Assured
         Response response = RestAssured.get(host + "/api/books/OL27479W");
         int statusCode = response.getStatusCode();
