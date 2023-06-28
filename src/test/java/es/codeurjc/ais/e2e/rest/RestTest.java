@@ -40,7 +40,7 @@ public class RestTest {
         String host = System.getProperty("host");
         Thread.sleep(30000);
         // Realiza la solicitud REST utilizando Rest Assured
-        Response response = RestAssured.get(host + "/api/books/OL27479W");
+        Response response = RestAssured.get(host + "api/books/OL27479W");
         int statusCode = response.getStatusCode();
         assertEquals(200, statusCode);
 
