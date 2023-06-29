@@ -21,6 +21,23 @@ Lo primero que se tiene que hacer es crear una rama "feature", a partir de la ra
 ```
 $ git checkout -b featureDesc
 ```
+Añadimos la nueva funcionalidad, en nuestro caso asegurarnos que la descripcion no tenga una longitud mayor a 950 caracteres, y si tiene una longitud mayor se añaden 3 puntos al final. Para comprobar qué archivos han sido modificados, utilizamos el siguiente comando de git:
 
-....
+```
+$ git status
+```
+Comprobamos que efectivamente solo se ha modificado el fichero BookDetail, por lo que procedemos a hacer commit de los cambios:
+
+```
+$ git commit -a -m "Añadidos puntos suspensivos a descripcion larga"
+```
+Tenenmos que hacer los cambios para que se puedan ver en remoto, para ello haremos push de nuestra rama y de nuestro commit:
+```
+$ git commit -a -m "Añadidos puntos suspensivos a descripcion larga"
+```
+
+
+
+
+
 
