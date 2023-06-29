@@ -40,7 +40,7 @@ $ git push --set-upstream origin featureDesc
 ```
 Iniciamos una pull request desde featureDesc a master, lo que desencadena en la ejecucion del workflow 1:[workflow 1 (A CAMBIAR)](https://github.com/AlejandroDelg/Repositorio-Auxiliar-Ampliacion-Ing-Software/actions/runs/5412611699)
 Una vez que ha pasado todas las pruebas del workflow 1, Aceptamos el merge de la pull request, lo que desencadena en la ejecucion del workflow 2: [workflow 2 (A CAMBIAR)](https://github.com/AlejandroDelg/Repositorio-Auxiliar-Ampliacion-Ing-Software/actions/runs/5412656890/jobs/9837052320)
-Nos situamos en la rama master y nos traemos los cambios actualizados:
+ Nos situamos en la rama master y nos traemos los cambios actualizados:
 ```
 $ git checkout master
 $ git pull
@@ -57,7 +57,7 @@ Hacemos push de la rama para poder ver los cambios en remoto:
 ```
 $ git push --set-upstream origin release-1
 ```
-Como podemos observar, se ejecuta el workflow 3 [workflow 3(cambiar enlace)](https://github.com/AlejandroDelg/Repositorio-Auxiliar-Ampliacion-Ing-Software/actions/runs/5412918368) y se sube la imagen a docker hub con el tag del commit[imagen docker(cambiar enlace)](https://hub.docker.com/layers/alejandrodelg/books-reviewer/39addc19a6f548168aafd613a8ebc9a70fb648d6/images/sha256-3c0de45013ae5c2f2fd3d6dff1d1bd2b8bdb337bf3bf27812ba65521adc51352?context=repo), así como se despliega la aplicación en okteto[enlace](https://books-reviewer-alejandrodelg.cloud.okteto.net/)
+Como podemos observar, se ejecuta el workflow 3 [workflow 3(cambiar enlace)](https://github.com/AlejandroDelg/Repositorio-Auxiliar-Ampliacion-Ing-Software/actions/runs/5412918368) y se sube la imagen a docker hub con el tag del commit [imagen docker(cambiar enlace)](https://hub.docker.com/layers/alejandrodelg/books-reviewer/39addc19a6f548168aafd613a8ebc9a70fb648d6/images/sha256-3c0de45013ae5c2f2fd3d6dff1d1bd2b8bdb337bf3bf27812ba65521adc51352?context=repo), así como se despliega la aplicación en okteto [enlace](https://books-reviewer-alejandrodelg.cloud.okteto.net/) y se ejecuta el sanity test para comprobar que la aplicaion está lanzada correctamente.
 
 ## workflow de nightly: 
 Este workflow(el workflow 4) se ejecuta todas las noches a las 2 de la madrugada. Concretamente, se lanza desde la rama master, y publicando una imagen en dockerhub con el tag de la fecha actual. Un ejemplo es el siguiente: [imagen docker fecha](https://hub.docker.com/layers/alejandrodelg/books-reviewer/dev-20230629.025722/images/sha256-49b24237e80829849f028750905a3375bb96cfb3cc870f0114eec442a26bc69a?context=repo)
