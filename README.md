@@ -40,8 +40,8 @@ Tenenmos que hacer los cambios para que se puedan ver en remoto, para ello harem
 ```
 $ git commit -a -m "Añadidos puntos suspensivos a descripcion larga"
 ```
-
-
+Iniciamos una pull request desde featureDesc a master, lo que desencadena en la ejecucion del workflow 1:[workflow 1 (A CAMBIAR)](https://github.com/AlejandroDelg/Repositorio-Auxiliar-Ampliacion-Ing-Software/actions/runs/5412611699)
+Una vez que ha pasado todas las pruebas del workflow 1, Aceptamos el merge de la pull request, lo que desencadena en la ejecucion del workflow 2: [workflow 2 (A CAMBIAR)](https://github.com/AlejandroDelg/Repositorio-Auxiliar-Ampliacion-Ing-Software/actions/runs/5412656890/jobs/9837052320)
 
 
 
