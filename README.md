@@ -17,8 +17,9 @@ Autor(es): Alejandro Delgado García
 
 Una vez creados los workflows y funcionando estos, pasamos a crear la nueva funcionalidad utilizando (Gitflow o TBD):
 
+Lo primero que se tiene que hacer es crear una rama "feature", a partir de la rama master(que será la rama "trunk"). Para ello, creamos la rama featureDesc, que la utilizaremos con una duracion muy reducida y para solo una persona, debido a que estamos utilizando TBD. Además, nos posicionaremos en la nueva rama.
 ```
-$ git clone ...
+$ git checkout -b featureDesc
 ```
 
 ....
