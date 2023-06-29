@@ -2,14 +2,12 @@
 
 Autor(es): Alejandro Delgado García
 
--	TBD por grupos grandes
--	Hacer captura de Alice's Adventures in Wonderland / Through the Looking Glass con URL https:///books/OL151411W (sino, es un 0)
 -	Si una de las acciones desencadena un workflow, se pondrá un link al resultado de su ejecución.
 -	En el caso del workflow de Nightly, se describirá cuándo se lanza, qué hace, un link a la última ejecución del workflow y un link a la última imagen generada
 -	Se deben describir los pasos seguidos para incluir la nueva funcionalidad, indicando las acciones realizadas en el repositorio (creación de ramas, pull requests, etc) hasta el despliegue a producción. Para ello, la memoria incluirá qué comandos git se han utilizado para esta parte, y qué hace cada uno de ellos.
 -	En el caso de publicar una imagen, se deberá incluir la URL de DockerHub de la misma
 
-[Repositorio](https://github.com/AlejandroDelg/Repositorio-Auxiliar-Ampliacion-Ing-Software/)
+[Repositorio](https://github.com/AlejandroDelg/ais-a.delgadog.2019-2023-tbd)
 
 [Aplicación Okteto](https://books-reviewer-alejandrodelg.cloud.okteto.net/)
 
