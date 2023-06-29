@@ -16,6 +16,11 @@ public class BookDetail extends Book{
     private List<Review> reviews = new ArrayList<>();
 
     public String getDescription() {
+        if(description.length() > 950)
+        {
+            description = description.substring(0, 950);
+            description += "...";
+        }
         return description;
     }
 
