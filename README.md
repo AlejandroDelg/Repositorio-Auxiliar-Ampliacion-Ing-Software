@@ -9,9 +9,11 @@ Autor(es): Alejandro Delgado García
 -	Se deben describir los pasos seguidos para incluir la nueva funcionalidad, indicando las acciones realizadas en el repositorio (creación de ramas, pull requests, etc) hasta el despliegue a producción. Para ello, la memoria incluirá qué comandos git se han utilizado para esta parte, y qué hace cada uno de ellos.
 -	En el caso de publicar una imagen, se deberá incluir la URL de DockerHub de la misma
 
-[Repositorio]([https://github.com/URJC-AIS/AIS-Practica-3-2023-template](https://github.com/AlejandroDelg/Repositorio-Auxiliar-Ampliacion-Ing-Software/))
+[Repositorio](https://github.com/AlejandroDelg/Repositorio-Auxiliar-Ampliacion-Ing-Software/)
 
-[Aplicación Okteto (CAMBIAR ENLACE)](https://books-maes95.cloud.okteto.net/)
+[Aplicación Okteto](https://books-reviewer-alejandrodelg.cloud.okteto.net/)
+
+[Captura imagen](https://books-maes95.cloud.okteto.net/)
 
 ## Desarrollo con (GitFlow/TBD)
 
@@ -35,7 +37,6 @@ Tenenmos que hacer los cambios para que se puedan ver en remoto, para ello harem
 ```
 $ git commit -a -m "Añadidos puntos suspensivos a descripcion larga"
 ```
-
 
 
 
