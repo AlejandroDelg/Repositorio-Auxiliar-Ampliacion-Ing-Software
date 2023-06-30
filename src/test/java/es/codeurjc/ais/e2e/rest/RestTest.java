@@ -49,6 +49,7 @@ public class RestTest {
         int descriptionLength = description.length();
         int maxLength = 953; // Longitud máxima esperada
         System.out.println("descripcion de la respuesta: " + responseBody);
+        System.out.println("push");
         assertTrue("La descripción del libro es mayor a 953 caracteres.", descriptionLength <= maxLength);
 
     }
